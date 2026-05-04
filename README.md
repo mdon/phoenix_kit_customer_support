@@ -1,8 +1,22 @@
 # PhoenixKitCustomerSupport
 
+[![Elixir](https://img.shields.io/badge/Elixir-~%3E_1.18-4B275F)](https://elixir-lang.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 Customer support ticketing module for [PhoenixKit](https://github.com/BeamLabEU/phoenix_kit).
 
 Provides a full ticketing system: create tickets, track status, add comments and attachments, manage agents. Extracted from PhoenixKit core (>= 1.7.104).
+
+## Features
+
+- **Ticket lifecycle** — `open → in_progress → resolved → closed` with full status-history audit trail
+- **Comments** — public comments visible to ticket owners, plus agent-only internal notes
+- **Attachments** — file uploads on tickets and comments via `PhoenixKit.Modules.Storage`
+- **Assignment** — assign tickets to support staff; assignment changes are recorded
+- **Reopen flow** — closed tickets can be reopened by users or agents (configurable)
+- **Admin and user LiveViews** — admin pages under `/admin/customer-support`, user-facing pages under `/dashboard/customer-support/tickets`
+- **PubSub events** — per-user, per-ticket, and global topics for real-time updates
+- **Auto-discovery** — implements `PhoenixKit.Module`; PhoenixKit finds it at startup with zero config
 
 ## Installation
 

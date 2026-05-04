@@ -18,6 +18,7 @@ defmodule PhoenixKitCustomerSupport.MixProject do
       dialyzer: [plt_add_apps: [:phoenix_kit]],
       name: "PhoenixKitCustomerSupport",
       source_url: @source_url,
+      homepage_url: @source_url,
       docs: docs()
     ]
   end
@@ -59,8 +60,10 @@ defmodule PhoenixKitCustomerSupport.MixProject do
 
   defp docs do
     [
-      main: "PhoenixKitCustomerSupport",
-      source_ref: "v#{@version}"
+      main: "readme",
+      source_ref: "v#{@version}",
+      source_url: @source_url,
+      extras: ["README.md", "CHANGELOG.md", "LICENSE"]
     ]
   end
 end
