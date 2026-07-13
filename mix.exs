@@ -50,7 +50,7 @@ defmodule PhoenixKitCustomerSupport.MixProject do
 
   defp deps do
     [
-      {:phoenix_kit, "~> 1.7"},
+      {:phoenix_kit, "~> 1.7.189"},
       {:gettext, "~> 1.0"},
       {:phoenix_live_view, "~> 1.1"},
       {:ex_doc, "~> 0.34", only: :dev, runtime: false},
